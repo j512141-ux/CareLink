@@ -1,0 +1,76 @@
+{
+  "name": "CareLink - 社區互助應用",
+  "short_name": "CareLink",
+  "description": "一個幫助長者和社區互相照顧、互相幫助的應用",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#f0f0f0",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["lifestyle", "social"],
+  "shortcuts": [
+    {
+      "name": "邀約",
+      "short_name": "邀約",
+      "description": "查看和發起邀約",
+      "url": "/?page=assist",
+      "icons": [
+        {
+          "src": "assets/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "相助",
+      "short_name": "相助",
+      "description": "查看求助和幫忙",
+      "url": "/?page=meet",
+      "icons": [
+        {
+          "src": "assets/logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
